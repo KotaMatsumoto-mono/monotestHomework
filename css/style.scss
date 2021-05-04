@@ -1,0 +1,230 @@
+@import "_values";
+/* ==========================================================================//
+//
+//　コーディングルール
+
+一般css記述
+■セレクタについて
+・1行1プロパティとし、各プロパティはインデントを付ける。インデントは半角スペース2つとする。
+・プロパティの値の前には、必ず半角スペースを入れる。
+
+■ショートハンドプロパティについて
+・一括指定可能なプロパティ(margin等)の個別指定(margin-top等)は、1つまでとする。
+・2つ以上の個別指定は一括指定にまとめる。
+
+■色の指定
+色は以下の2通りの記述方法で適宜指定をする。
+16進数6桁で記述する。省略できるものは3桁で記述する。
+
+■フォントファミリー
+フォントファミリーは以下の順序で記述する。
+'Hiragino Sans', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif
+
+
+CSS hackはできるだけ使用を避けるものとし、やむを得ず使用する場合はIEに対してhackを使用すること。
+
+FirefoxやGoogle Chrome、Safariでレイアウトが崩れていたとしても、通常の記述でそれらの表示に合わせ、IE用にhackの記述を行うこと。
+
+■小数について
+・小数部の桁数は2桁とし、小数点以下第3位は四捨五入する。
+・一の位の0は省略する。
+例）
+font-size: .8em;
+
+//
+// ========================================================================== */
+
+/* COMMON_PARTS
+---------------------------------------------------------- */
+body {
+    background: $bg_c-Base;
+    color: $color-main;
+    font-family: $font_family-default;
+}
+
+a {
+    &:link {
+        color: $color-main;
+    }
+}
+
+/* HEADER
+---------------------------------------------------------- */
+
+.header {
+    .header__logo {
+    }
+    .header__btn {
+        .btn.btn-contact {
+        }
+        .btn.btn-lang {
+        }
+    }
+    .header__txt-size {
+        .txt-size__label {
+            color: $color-black;
+        }
+        a {
+            color: $color-white;
+            &:link {
+            }
+        }
+        .txt-size__btn--s {
+        }
+        .txt-size__btn--m.is-active {
+        }
+        .txt-size__btn--l {
+        }
+    }
+    .header__nav {
+        .list-gnav {
+            .list-gnav__item.is-current {
+            }
+            .list-gnav__item {
+                color: $color-white;
+                a {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+/* MV
+---------------------------------------------------------- */
+
+/* BREADCRUMB
+---------------------------------------------------------- */
+.breadcrumb {
+    a {
+        color: $color-main;
+        &:link {
+            color: $color-main;
+        }
+    }
+    .is-current {
+    }
+}
+
+/* CONTENTS
+---------------------------------------------------------- */
+.contents {
+    background: $bg_c-Base;
+    .sec-cmn__ttl {
+        color: $color-white;
+    }
+}
+
+/* FLOAT NONE
+---------------------------------------------------------- */
+.sec-cmn--img-r {
+    .sec-cmn__ttl {
+    }
+}
+
+/* FLOAT
+---------------------------------------------------------- */
+.sec-cmn--img-l {
+    .sec-cmn__ttl {
+    }
+}
+
+/* LINE UP
+---------------------------------------------------------- */
+.sec-lineup {
+    .sec-cmn__ttl {
+    }
+    .list-lineup {
+        .list-lineup__item {
+        }
+    }
+}
+
+/* NEWS
+---------------------------------------------------------- */
+.sec-news {
+    .sec-cmn__ttl {
+    }
+    .list-news {
+        .list-news__date {
+        }
+        .list-news__txt {
+        }
+    }
+}
+
+/* TABLE
+---------------------------------------------------------- */
+.sec-table {
+    .sec-cmn__ttl {
+    }
+    .table-cmn {
+        .table__ttl {
+        }
+        .table__desc {
+        }
+    }
+}
+
+/* PAGINATION
+---------------------------------------------------------- */
+.pagination {
+    .list-pagination {
+        color: $color-main;
+        .is-current {
+            color: $color-white;
+        }
+    }
+}
+/* ASIDE
+---------------------------------------------------------- */
+.sub-content {
+    background: $bg_c-white;
+    .local-nav {
+        .list-lnav {
+            .aside__list--ttl {
+                color: $color-white;
+            }
+            .aside__list--item {
+                a {
+                    color: $color-main;
+                    &:link {
+                        color: $color-main;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* BTN TOP
+---------------------------------------------------------- */
+.btn-top {
+    background: $bg_c-black;
+
+    color: $color-white;
+    &:link {
+        color: $color-white;
+    }
+}
+
+/* FOOTER
+---------------------------------------------------------- */
+.footer {
+    background: $bg_c-black;
+    color: $color-white;
+    .footer__nav {
+        .list-footer-nav {
+            .list-footer-nav__item {
+                a {
+                    color: $color-white;
+                    &:link {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+    }
+}
