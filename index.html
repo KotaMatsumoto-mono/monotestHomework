@@ -9,7 +9,7 @@
     <!-- ディスクリプションはサイトの説明文。 -->
     <meta name="description" content="サイトの説明の文章">
     <!-- スマホやタブレットで表示をするビューポートの記述 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=900px">
     <!-- CSS -->
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -19,17 +19,25 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="header__logo"><a href="/"><img src="images/logo.png" alt="Rgbw"></a></div>
-        <ul class="header__btn">
-            <li><a class="btn btn-contact"><img src="images/btn-contact.png" alt="contact us"></a></li>
-            <li><a class="btn btn-lang"><img src="images/btn-english.png" alt="english"></a></li>
-        </ul>
-        <dl class="header__txt-size">
-            <dt class="txt-size__label">文字サイズ</dt>
-            <dd><div id="btn_s" class="txt-size__btn btn--s">小</div></dd>
-            <dd><div id="btn_m" class="txt-size__btn btn--m is-active">中</div></dd>
-            <dd><div id="btn_l" class="txt-size__btn btn--l">大</div></dd>
-        </dl>
+        <div class="header__inner">
+            <div class="header__logo"><a href="/"><img src="images/logo.png" alt="Rgbw"></a></div>
+            <ul class="header__btn">
+                <li><a class="btn btn-contact"><img src="images/btn-contact.png" alt="contact us"></a></li>
+                <li><a class="btn btn-lang"><img src="images/btn-english.png" alt="english"></a></li>
+            </ul>
+            <dl class="header__txt-size">
+                <dt class="txt-size__label">文字サイズ</dt>
+                <dd>
+                    <div id="btn_s" class="txt-size__btn btn--s">小</div>
+                </dd>
+                <dd>
+                    <div id="btn_m" class="txt-size__btn btn--m is-active">中</div>
+                </dd>
+                <dd>
+                    <div id="btn_l" class="txt-size__btn btn--l">大</div>
+                </dd>
+            </dl>
+        </div>
         <nav class="header__nav">
             <ul class="list-gnav">
                 <li class="list-gnav__item"><a href="#">CONCEPT</a></li>
@@ -39,6 +47,7 @@
                 <li class="list-gnav__item"><a href="#">SHOP LIST</a></li>
             </ul>
         </nav>
+
     </header>
 
     <!-- mv -->

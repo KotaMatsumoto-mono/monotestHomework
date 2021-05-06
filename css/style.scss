@@ -62,92 +62,96 @@ section {
 ---------------------------------------------------------- */
 
 .header {
-    .header__logo {
-        position: absolute;
-        top: 0;
-        left: 10%;
-    }
-    .header__btn {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        margin-bottom: $rem-18px;
-        padding: 0 9%;
-        .btn {
-            transition: all 0.4s;
-            cursor: pointer;
-            &:hover {
-                opacity: 0.7;
+    .header__inner {
+        width: 900px;
+        margin: 0 auto;
+        position: relative;
+        .header__logo {
+            position: absolute;
+            top: 0;
+            left: 44px;
+        }
+        .header__btn {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            margin-bottom: 18px;
+            .btn {
+                transition: all 0.4s;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+            .btn.btn-contact {
+                margin-right: 6px;
+            }
+            .btn.btn-lang {
             }
         }
-        .btn.btn-contact {
-            margin-right: $rem-6px;
-        }
-        .btn.btn-lang {
-        }
-    }
-    .header__txt-size {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        padding: 0 9%;
-        margin-bottom: $rem-16px;
-        .txt-size__label {
-            color: $color-black;
-            font-size: $rem-10px;
-            margin-right: $rem-8px;
-            padding-top: $rem-2px;
-        }
-        .txt-size__btn {
-            background: rgb(109, 109, 109);
-            background: linear-gradient(180deg, rgba(109, 109, 109, 1) 53%, rgba(62, 62, 62, 1) 100%);
-            color: $color-white;
-            line-height: 1;
-            padding: $rem-4px $rem-5px;
-            font-size: $rem-10px;
-            cursor: pointer;
-        }
-        .btn--s {
-            border-radius: $rem-10px 0 0 $rem-10px;
-            border-right: $rem-1px solid #5f5f5f;
-            padding-left: $rem-8px;
-        }
-        .btn--m {
-            border-left: $rem-1px solid #7f7f7f;
-            border-right: $rem-1px solid #5f5f5f;
-        }
-        .btn--l {
-            border-left: $rem-1px solid #7f7f7f;
-            border-radius: 0 $rem-10px $rem-10px 0;
-            padding-right: $rem-8px;
-        }
-        .is-active {
-            background: rgb(158, 158, 158);
-            background: linear-gradient(180deg, rgba(158, 158, 158, 1) 53%, rgba(110, 110, 110, 1) 100%);
+        .header__txt-size {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            margin-bottom: 16px;
+            .txt-size__label {
+                color: $color-black;
+                font-size: 10px;
+                margin-right: 8px;
+                padding-top: 2px;
+            }
+            .txt-size__btn {
+                background: rgb(109, 109, 109);
+                background: linear-gradient(180deg, rgba(109, 109, 109, 1) 53%, rgba(62, 62, 62, 1) 100%);
+                color: $color-white;
+                line-height: 1;
+                padding: 4px 5px;
+                font-size: 10px;
+                cursor: pointer;
+            }
+            .btn--s {
+                border-radius: 10px 0 0 10px;
+                border-right: 1px solid #5f5f5f;
+                padding-left: 8px;
+            }
+            .btn--m {
+                border-left: 1px solid #7f7f7f;
+                border-right: 1px solid #5f5f5f;
+            }
+            .btn--l {
+                border-left: 1px solid #7f7f7f;
+                border-radius: 0 10px 10px 0;
+                padding-right: 8px;
+            }
+            .is-active {
+                background: rgb(158, 158, 158);
+                background: linear-gradient(180deg, rgba(158, 158, 158, 1) 53%, rgba(110, 110, 110, 1) 100%);
+            }
         }
     }
     .header__nav {
         width: 100%;
-        margin-bottom: rem(24);
-        padding: 0 10%;
+        margin-bottom: 24px;
         background-color: $bg_c-black;
         .list-gnav {
+            width: 900px;
             display: flex;
             flex-wrap: nowrap;
             justify-content: flex-end;
-            color: $color-white;
-            padding: $rem-10px 0;
+            color: #fff;
+            padding: 10px 0;
+            margin: 0 auto;
             .list-gnav__item {
                 text-align: center;
                 color: $color-white;
                 width: calc(100% / 6);
-                height: $rem-20px;
-                border-right: $rem-1px #343434 solid;
+                height: 20px;
+                border-right: 1px #343434 solid;
                 a {
-                    padding: $rem-6px 0;
+                    padding: 6px 0;
                     color: $color-white;
                     vertical-align: middle;
                     &:link {
@@ -155,15 +159,15 @@ section {
                     }
                 }
                 &:first-child {
-                    border-left: $rem-1px #343434 solid;
+                    border-left: 1px #343434 solid;
                 }
                 &.is-current {
                     a {
-                        padding: $rem-4px $rem-28px;
+                        padding: 4px 28px;
                         background: #fff;
                         color: #bbaf6a;
                         vertical-align: middle;
-                        border-radius: $rem-20px;
+                        border-radius: 20px;
                     }
                 }
             }
@@ -175,11 +179,11 @@ section {
 ---------------------------------------------------------- */
 
 .mv {
-    padding: 0 9%;
-    margin-bottom: $rem-16px;
+    margin-bottom: 16px;
     width: 100%;
     .mv__img {
-        width: 100%;
+        width: 900px;
+        margin: 0 auto;
     }
 }
 
