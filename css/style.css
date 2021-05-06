@@ -196,13 +196,8 @@ section {
 /* MV
 ---------------------------------------------------------- */
 .mv {
-  margin-bottom: 16px;
-  width: 100%;
-}
-
-.mv .mv__img {
+  margin: 0 auto 16px;
   width: 900px;
-  margin: 0 auto;
 }
 
 /* CONTAINER
