@@ -26,14 +26,14 @@
         </ul>
         <dl class="header__txt-size">
             <dt class="txt-size__label">文字サイズ</dt>
-            <dd><a href="#" class="txt-size__btn--s">小</a></dd>
-            <dd><a href="#" class="txt-size__btn--m is-active">中</a></dd>
-            <dd><a href="#" class="txt-size__btn--l">大</a></dd>
+            <dd><div id="btn_s" class="txt-size__btn btn--s">小</div></dd>
+            <dd><div id="btn_m" class="txt-size__btn btn--m is-active">中</div></dd>
+            <dd><div id="btn_l" class="txt-size__btn btn--l">大</div></dd>
         </dl>
         <nav class="header__nav">
             <ul class="list-gnav">
-                <li class="list-gnav__item is-current"><a href="#">CONCEPT</a></li>
-                <li class="list-gnav__item"><a href="#">BASIC ITEM</a></li>
+                <li class="list-gnav__item"><a href="#">CONCEPT</a></li>
+                <li class="list-gnav__item is-current"><a href="#">BASIC ITEM</a></li>
                 <li class="list-gnav__item"><a href="#">MAKE-UP</a></li>
                 <li class="list-gnav__item"><a href="#">COMPANY</a></li>
                 <li class="list-gnav__item"><a href="#">SHOP LIST</a></li>
@@ -43,7 +43,6 @@
 
     <!-- mv -->
     <h1 class="mv" id="top"><img src="images/mainImage.png" alt="纏う蒼、背徳の黒 S&M series debut" class="mv__img"></h1>
-
     <div class="container">
         <main class="main-content">
             <!-- breadcrumb -->
@@ -68,6 +67,9 @@
                     <figure><img src="images/perfume2.png" alt="回り込む香水"></figure>
                     <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         ストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p>
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ
                     </p>
                     <p>
                         テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ
@@ -130,12 +132,11 @@
                     </table>
                 </section>
                 <!-- pagination -->
-
                 <nav class="pagination">
                     <ul class="list-pagination">
                         <li><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
-                        <li><a href="#" class="is-current">3</a></li>
+                        <li class="is-current"><a href="#">3</a></li>
                         <li><a href="#">4</a></li>
                         <li><a href="#">5</a></li>
                     </ul>
@@ -169,7 +170,7 @@
         </aside>
     </div>
     <!-- toTop -->
-    <a href="#top" class="btn-top"><span>ページのトップへ</span></a>
+    <a href="#top" id="page_top" class="btn-top"><span>ページのトップへ</span></a>
 
 
     <!-- footer -->
@@ -202,7 +203,7 @@
     </footer>
     <!-- /footer -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="script.js"></script>.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
