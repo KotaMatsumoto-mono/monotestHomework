@@ -274,7 +274,6 @@ section {
 }
 
 .breadcrumb li {
-  padding: 0.5625rem 0 0.5625rem 1.125rem;
   color: #666;
   background: #fff;
 }
@@ -283,6 +282,7 @@ section {
   display: block;
   position: relative;
   color: #666;
+  padding: 0.5625rem 0 0.5625rem 1.125rem;
   padding-right: 5px;
 }
 
@@ -318,7 +318,7 @@ section {
   transform: translateY(-50%);
 }
 
-.breadcrumb li:first-child {
+.breadcrumb li a:first-child {
   padding-left: 12px;
 }
 

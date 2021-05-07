@@ -243,7 +243,6 @@ section {
     background: $bg_c-white;
     border-radius: 3px;
     li {
-        padding: $rem-9px 0 $rem-9px $rem-18px;
         color: $color-main;
         background: $bg_c-white;
 
@@ -252,6 +251,7 @@ section {
             display: block;
             position: relative;
             color: $color-main;
+            padding: $rem-9px 0 $rem-9px $rem-18px;
             padding-right: 5px;
             &:link {
                 color: $color-main;
@@ -284,10 +284,11 @@ section {
                 top: 50%;
                 transform: translateY(-50%);
             }
+            &:first-child {
+                padding-left: 12px;
+            }
         }
-        &:first-child {
-            padding-left: 12px;
-        }
+
         &:last-child {
             cursor: default;
             pointer-events: none;
