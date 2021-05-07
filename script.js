@@ -23,17 +23,14 @@
         // 小ボタンクリック
         $('#btn_s').click(function () {
             $("html").css('font-size', '12px');
-            $(this).addClass('is-active');
         });
         // 中ボタンクリック
         $('#btn_m').click(function () {
             $("html").css('font-size', '16px');
-            $(this).addClass('is-active');
         });
         // 大ボタンクリック
         $('#btn_l').click(function () {
             $("html").css('font-size', '20px');
-            $(this).addClass('is-active');
         });
     });
 }

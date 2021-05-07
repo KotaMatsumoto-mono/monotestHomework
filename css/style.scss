@@ -141,33 +141,61 @@ section {
             display: flex;
             flex-wrap: nowrap;
             justify-content: flex-end;
-            color: #fff;
-            padding: 10px 0;
             margin: 0 auto;
             .list-gnav__item {
-                text-align: center;
-                color: $color-white;
-                width: calc(100% / 6);
-                height: 20px;
-                border-right: 1px #343434 solid;
+                cursor: pointer;
+                display: block;
+                width: 150px;
+                height: 40px;
+                background-image: url(../images/menuCurrent.png);
                 a {
-                    padding: 6px 0;
-                    color: $color-white;
-                    vertical-align: middle;
-                    &:link {
-                        color: $color-white;
-                    }
-                }
-                &:first-child {
-                    border-left: 1px #343434 solid;
+                    font-size: 0px;
                 }
                 &.is-current {
-                    a {
-                        padding: 4px 28px;
-                        background: #fff;
-                        color: #bbaf6a;
-                        vertical-align: middle;
-                        border-radius: 20px;
+                }
+                &:nth-child(1) {
+                    background-position: 845px bottom;
+                    &:hover {
+                        background-position: 845px center;
+                    }
+                    &.is-current {
+                        background-position: 845px top;
+                    }
+                }
+                &:nth-child(2) {
+                    background-position: 696px bottom;
+                    &:hover {
+                        background-position: 696px center;
+                    }
+                    &.is-current {
+                        background-position: 696px top;
+                    }
+                }
+                &:nth-child(3) {
+                    background-position: 546px bottom;
+                    &:hover {
+                        background-position: 546px center;
+                    }
+                    &.is-current {
+                        background-position: 546px top;
+                    }
+                }
+                &:nth-child(4) {
+                    background-position: 398px bottom;
+                    &:hover {
+                        background-position: 398px center;
+                    }
+                    &.is-current {
+                        background-position: 398px top;
+                    }
+                }
+                &:nth-child(5) {
+                    background-position: 249px bottom;
+                    &:hover {
+                        background-position: 249px center;
+                    }
+                    &.is-current {
+                        background-position: 249px top;
                     }
                 }
             }
@@ -192,8 +220,9 @@ section {
     flex-wrap: nowrap;
     justify-content: space-between;
     flex-direction: row-reverse;
-    padding: 0 9%;
+    width: 900px;
     margin-bottom: $rem-28px;
+    margin: 0 auto;
     .main-content {
         width: calc((100% - 220px));
     }
@@ -205,117 +234,178 @@ section {
 /* BREADCRUMB
 ---------------------------------------------------------- */
 .breadcrumb {
+    width: 100%;
     margin-bottom: $rem-10px;
     font-size: $rem-10px;
-
-    a {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    background: $bg_c-white;
+    border-radius: 3px;
+    li {
+        padding: $rem-9px 0 $rem-9px $rem-18px;
         color: $color-main;
-        &:link {
+        background: $bg_c-white;
+
+        a {
+            // くりっかぶるな要素にするためにブロック要素にする
+            display: block;
+            position: relative;
             color: $color-main;
-            text-decoration: underline;
+            padding-right: 5px;
+            &:link {
+                color: $color-main;
+                text-decoration: underline;
+            }
+            // 背景色の白い三角
+            &::before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: $rem-13px 0 $rem-13px $rem-13px;
+                border-color: transparent transparent transparent $bg_c-white;
+                z-index: 1;
+                right: calc(0.8125rem * -1);
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            // 線として表現する背景色
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: $rem-13px 0 $rem-13px $rem-13px;
+                border-color: transparent transparent transparent #e4e1cf;
+                right: calc(0.875rem * -1);
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &:first-child {
+            padding-left: 12px;
+        }
+        &:last-child {
+            cursor: default;
+            pointer-events: none;
+            background: #e4e1cf;
+            a {
+                text-decoration: none;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: $rem-13px 0 $rem-13px $rem-13px;
+                    border-color: transparent transparent transparent #e4e1cf;
+                    right: calc(0.8125rem * -1);
+                }
+            }
         }
     }
-    .is-current {
-    }
 }
 
-.breadcrumb *:after,
-.breadcrumb *:before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.breadcrumb {
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    list-style: none;
-    background: $bg_c-white;
-    line-height: 1;
-    border-radius: 3px;
-}
-.breadcrumb li {
-    display: inline-block;
-    margin: 0;
-    padding-left: $rem-10px;
-    margin-left: $rem-2px;
-    &:first-child {
-        margin-left: 0;
-    }
-}
-.breadcrumb a {
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    padding: 0 $rem-5px 0 $rem-15px;
-    text-decoration: none;
-    color: #8a8a8a;
-    background-color: white;
-}
-.breadcrumb li:first-child a {
-    border-radius: 5px 0 0 5px;
-    padding: 0 0 0 8px;
-}
-.breadcrumb a::after,
-.breadcrumb a::before {
-    position: absolute;
-    top: 50%;
-    right: -1.5em;
-    margin-top: -1.4em;
-    content: "";
-    border-top: 1.48em solid transparent;
-    border-bottom: 1.48em solid transparent;
-    border-left: 1.4em solid;
-}
-.breadcrumb a::after {
-    z-index: 2;
-    border-left-color: #fff;
-    right: -19px;
-}
-.breadcrumb a::before {
-    z-index: 1;
-    right: -20px;
-    border-left-color: #e4e1cf;
-}
-.breadcrumb li:nth-child(2) a {
-    background: #fff;
-}
-.breadcrumb li:nth-child(2) a:after {
-    border-left-color: #fff;
-}
-.breadcrumb li:nth-child(3) a {
-    background: #e4e1cf;
-}
-.breadcrumb li:nth-child(3) a:after {
-    border-left-color: #e4e1cf;
-}
-.breadcrumb li:nth-child(4) a {
-    background: #d4d4d4;
-}
-.breadcrumb li:nth-child(4) a:after {
-    border-left-color: #e4e1cf;
-}
+// .breadcrumb *:after,
+// .breadcrumb *:before {
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+// }
+// .breadcrumb {
+//     overflow: hidden;
+//     width: 100%;
+//     padding: 0;
+//     list-style: none;
+//     background: $bg_c-white;
+//     line-height: 1;
+//     border-radius: 3px;
+// }
+// .breadcrumb li {
+//     display: inline-block;
+//     margin: 0;
+//     padding-left: $rem-10px;
+//     margin-left: $rem-2px;
+//     &:first-child {
+//         margin-left: 0;
+//     }
+// }
+// .breadcrumb a {
+//     position: relative;
+//     display: inline-block;
+//     margin: 0;
+//     padding: 0 $rem-5px 0 $rem-15px;
+//     text-decoration: none;
+//     color: #8a8a8a;
+//     background-color: white;
+// }
+// .breadcrumb li:first-child a {
+//     border-radius: 5px 0 0 5px;
+//     padding: 0 0 0 8px;
+// }
+// .breadcrumb a::after,
+// .breadcrumb a::before {
+//     position: absolute;
+//     top: 50%;
+//     right: -1.5em;
+//     margin-top: -1.4em;
+//     content: "";
+//     border-top: 1.48em solid transparent;
+//     border-bottom: 1.48em solid transparent;
+//     border-left: 1.4em solid;
+// }
+// .breadcrumb a::after {
+//     z-index: 2;
+//     border-left-color: #fff;
+//     right: -19px;
+// }
+// .breadcrumb a::before {
+//     z-index: 1;
+//     right: -20px;
+//     border-left-color: #e4e1cf;
+// }
+// .breadcrumb li:nth-child(2) a {
+//     background: #fff;
+// }
+// .breadcrumb li:nth-child(2) a:after {
+//     border-left-color: #fff;
+// }
+// .breadcrumb li:nth-child(3) a {
+//     background: #e4e1cf;
+// }
+// .breadcrumb li:nth-child(3) a:after {
+//     border-left-color: #e4e1cf;
+// }
+// .breadcrumb li:nth-child(4) a {
+//     background: #d4d4d4;
+// }
+// .breadcrumb li:nth-child(4) a:after {
+//     border-left-color: #e4e1cf;
+// }
 
-.breadcrumb li:last-child a {
-    cursor: default;
-    pointer-events: none;
-    background: #e4e1cf;
-    padding: $rem-9px 0 $rem-9px $rem-18px;
-}
-.breadcrumb li:last-child a:hover {
-    background: none;
-}
-.breadcrumb li:last-child a::before,
-.breadcrumb li:last-child a::after {
-    content: normal;
-    position: absolute;
-    top: 50%;
-    right: -1.5em;
-    margin-top: -1.48em;
-    content: "";
-    border-top: 1.48em solid transparent;
-    border-bottom: 1.48em solid transparent;
-    border-left: 1.5em solid #e4e1cf;
-}
+// .breadcrumb li:last-child a {
+//     cursor: default;
+//     pointer-events: none;
+//     background: #e4e1cf;
+//     padding: $rem-9px 0 $rem-9px $rem-18px;
+// }
+// .breadcrumb li:last-child a:hover {
+//     background: none;
+// }
+// .breadcrumb li:last-child a::before,
+// .breadcrumb li:last-child a::after {
+//     content: normal;
+//     position: absolute;
+//     top: 50%;
+//     right: -1.5em;
+//     margin-top: -1.48em;
+//     content: "";
+//     border-top: 1.48em solid transparent;
+//     border-bottom: 1.48em solid transparent;
+//     border-left: 1.5em solid #e4e1cf;
+// }
 
 /* CONTENTS
 ---------------------------------------------------------- */
