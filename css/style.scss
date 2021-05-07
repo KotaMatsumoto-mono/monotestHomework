@@ -507,11 +507,16 @@ section {
     .list-lineup {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         .list-lineup__item {
             width: calc((100% - (14px * 3)) / 4);
+            margin-right: 14px;
+            &:nth-of-type(4n) {
+                margin-right: 0;
+            }
             img {
                 width: 100%;
+                border: solid 1px #ccc;
             }
         }
     }
