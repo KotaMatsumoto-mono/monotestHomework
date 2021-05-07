@@ -250,7 +250,7 @@ section {
     justify-content: flex-start;
     overflow: hidden;
     background: $bg_c-white;
-    border-radius: 3px;
+    border-radius: 4px;
     li {
         color: $color-main;
         background: $bg_c-white;
@@ -422,6 +422,7 @@ section {
 .contents {
     padding: $rem-20px;
     background: $bg_c-white;
+    border-radius: 4px 4px 0 0;
     p {
         margin-bottom: $rem-20px;
         &:last-child {
