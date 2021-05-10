@@ -254,7 +254,6 @@ section {
     li {
         color: $color-main;
         background: $bg_c-white;
-
         a {
             // くりっかぶるな要素にするためにブロック要素にする
             display: block;
@@ -319,108 +318,11 @@ section {
     }
 }
 
-// .breadcrumb *:after,
-// .breadcrumb *:before {
-//     -webkit-box-sizing: border-box;
-//     box-sizing: border-box;
-// }
-// .breadcrumb {
-//     overflow: hidden;
-//     width: 100%;
-//     padding: 0;
-//     list-style: none;
-//     background: $bg_c-white;
-//     line-height: 1;
-//     border-radius: 3px;
-// }
-// .breadcrumb li {
-//     display: inline-block;
-//     margin: 0;
-//     padding-left: $rem-10px;
-//     margin-left: $rem-2px;
-//     &:first-child {
-//         margin-left: 0;
-//     }
-// }
-// .breadcrumb a {
-//     position: relative;
-//     display: inline-block;
-//     margin: 0;
-//     padding: 0 $rem-5px 0 $rem-15px;
-//     text-decoration: none;
-//     color: #8a8a8a;
-//     background-color: white;
-// }
-// .breadcrumb li:first-child a {
-//     border-radius: 5px 0 0 5px;
-//     padding: 0 0 0 8px;
-// }
-// .breadcrumb a::after,
-// .breadcrumb a::before {
-//     position: absolute;
-//     top: 50%;
-//     right: -1.5em;
-//     margin-top: -1.4em;
-//     content: "";
-//     border-top: 1.48em solid transparent;
-//     border-bottom: 1.48em solid transparent;
-//     border-left: 1.4em solid;
-// }
-// .breadcrumb a::after {
-//     z-index: 2;
-//     border-left-color: #fff;
-//     right: -19px;
-// }
-// .breadcrumb a::before {
-//     z-index: 1;
-//     right: -20px;
-//     border-left-color: #e4e1cf;
-// }
-// .breadcrumb li:nth-child(2) a {
-//     background: #fff;
-// }
-// .breadcrumb li:nth-child(2) a:after {
-//     border-left-color: #fff;
-// }
-// .breadcrumb li:nth-child(3) a {
-//     background: #e4e1cf;
-// }
-// .breadcrumb li:nth-child(3) a:after {
-//     border-left-color: #e4e1cf;
-// }
-// .breadcrumb li:nth-child(4) a {
-//     background: #d4d4d4;
-// }
-// .breadcrumb li:nth-child(4) a:after {
-//     border-left-color: #e4e1cf;
-// }
-
-// .breadcrumb li:last-child a {
-//     cursor: default;
-//     pointer-events: none;
-//     background: #e4e1cf;
-//     padding: $rem-9px 0 $rem-9px $rem-18px;
-// }
-// .breadcrumb li:last-child a:hover {
-//     background: none;
-// }
-// .breadcrumb li:last-child a::before,
-// .breadcrumb li:last-child a::after {
-//     content: normal;
-//     position: absolute;
-//     top: 50%;
-//     right: -1.5em;
-//     margin-top: -1.48em;
-//     content: "";
-//     border-top: 1.48em solid transparent;
-//     border-bottom: 1.48em solid transparent;
-//     border-left: 1.5em solid #e4e1cf;
-// }
-
 /* CONTENTS
 ---------------------------------------------------------- */
 .contents {
-    padding: $rem-20px;
+    margin-bottom: $rem-26px;
+    padding: $rem-20px $rem-20px $rem-26px;
     background: $bg_c-white;
     border-radius: 4px 4px 0 0;
     p {
