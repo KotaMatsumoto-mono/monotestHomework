@@ -467,15 +467,21 @@ section {
 
 /* TABLE
 ---------------------------------------------------------- */
+/* 
+ ボーダースペーシング
+ボーダーコラプスセパレート
+*/
 .sec-table .table-cmn {
   background: #c8c19b;
+  border-spacing: 1px;
 }
 
 .sec-table .table-cmn .table__ttl {
   font-weight: bold;
   width: 25%;
   text-align: left;
-  border: 1px solid white;
+  border: 1px solid #fff;
+  border-collapse: separate;
   padding: 0.25rem;
   vertical-align: middle;
   background: #e4e1cf;
