@@ -385,6 +385,11 @@ section {
         margin-left: $rem-24px;
         margin-bottom: $rem-24px;
     }
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 /* FLOAT
