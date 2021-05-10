@@ -428,31 +428,31 @@ section {
 ---------------------------------------------------------- */
 .sec-news {
     .sec-cmn__ttl {
-        margin-bottom: $rem-10px;
+        margin-bottom: $rem-6px;
     }
     .list-news {
         display: flex;
         flex-wrap: wrap;
         .list-news__date {
-            width: 60px;
+            width: 80px;
             border-bottom: 1px dotted #999;
+            font-size: 10px;
             padding-top: 4px;
+            margin-bottom: 4px;
         }
         .list-news__txt {
-            width: calc(100% - 70px);
             position: relative;
+            width: calc(100% - 80px);
             line-height: 1.5;
             border-bottom: 1px dotted #999;
             font-size: $rem-12px;
-            padding: $rem-2px 0 $rem-2px $rem-26px;
-            &::before {
+            padding-bottom: 6px;
+            margin-bottom: 4px;
+            padding: 0px 0 6px 8px;
+            .ico-arrow {
                 position: absolute;
-                content: "";
-                left: 20px;
-                top: 4px;
-                border-top: 4px solid transparent;
-                border-bottom: 4px solid transparent;
-                border-left: 4px solid #e4e1cf;
+                top: 5px;
+                left: 0;
             }
         }
     }
