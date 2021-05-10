@@ -279,7 +279,7 @@ section {
   justify-content: flex-start;
   overflow: hidden;
   background: #fff;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .breadcrumb li {
@@ -355,8 +355,10 @@ section {
 /* CONTENTS
 ---------------------------------------------------------- */
 .contents {
-  padding: 1.25rem;
+  margin-bottom: 1.625rem;
+  padding: 1.25rem 1.25rem 1.625rem;
   background: #fff;
+  border-radius: 4px 4px 0 0;
 }
 
 .contents p {
