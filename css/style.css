@@ -516,15 +516,39 @@ section {
 
 /* ASIDE
 ---------------------------------------------------------- */
-.sub-content .local-nav .list-lnav {
-  margin-bottom: 1.25rem;
+.btn-top {
+  display: block;
+  width: 8.125rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  text-decoration: none;
+  background: #000;
+  margin-left: auto;
+  font-size: 0.6875rem;
+  color: #fff;
+  border-radius: 4px 4px 0 0;
 }
 
-.sub-content .local-nav .list-lnav .aside__list--ttl {
-  padding: 0.5rem 0;
+.btn-top:link {
   color: #fff;
-  text-align: center;
-  background-image: url(../images/aside-bg1.png);
+}
+
+.btn-top span {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.btn-top span::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0.25rem 0.25rem 0.25rem;
+  border-color: transparent transparent #e4e1cf transparent;
+  left: 0;
+  top: 0.1875rem;
+}
 }
 
 .sub-content .local-nav .list-lnav .aside__list--item {
