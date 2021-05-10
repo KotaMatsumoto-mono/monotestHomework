@@ -293,10 +293,11 @@ section {
                 transform: translateY(-50%);
             }
             &:first-child {
-                padding-left: 12px;
+                a {
+                    padding-left: 12px;
+                }
             }
         }
-
         &:last-child {
             cursor: default;
             pointer-events: none;
