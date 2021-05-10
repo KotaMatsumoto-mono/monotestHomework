@@ -506,9 +506,14 @@ section {
 }
 
 .pagination .list-pagination li {
-  border: 1px solid #999999;
-  padding: 0.3125rem 0.9375rem;
+  border: 1px solid #999;
   margin-right: 0.0625rem;
+}
+
+.pagination .list-pagination li a {
+  display: block;
+  color: #666;
+  padding: 0.3125rem 0.9375rem;
 }
 
 .pagination .list-pagination li.is-current {

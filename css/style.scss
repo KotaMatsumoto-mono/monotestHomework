@@ -501,10 +501,12 @@ section {
         color: $color-main;
         text-decoration: underline;
         li {
-            border: 1px solid #999999;
-            padding: $rem-5px $rem-15px;
+            border: 1px solid #999;
             margin-right: $rem-1px;
             a {
+                display: block;
+                color: #666;
+                padding: $rem-5px $rem-15px;
             }
             &.is-current {
                 background: #999;
