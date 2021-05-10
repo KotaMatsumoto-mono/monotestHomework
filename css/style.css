@@ -549,16 +549,21 @@ section {
   left: 0;
   top: 0.1875rem;
 }
+
+/* ASIDE
+---------------------------------------------------------- */
+.sub-content .local-nav .list-lnav {
+  margin-bottom: 1.25rem;
 }
 
 .sub-content .local-nav .list-lnav .aside__list--item {
   background: white;
   border-bottom: 1px solid #d1d1d1;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 .sub-content .local-nav .list-lnav .aside__list--item a {
-  padding: 0.5625rem 0.625rem 0.5625rem 1.875rem;
+  padding: 0.4375rem 1.5625rem 0.4375rem 1.5625rem;
   display: block;
   position: relative;
   color: #666;
