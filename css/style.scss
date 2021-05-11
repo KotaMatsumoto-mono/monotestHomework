@@ -346,7 +346,7 @@ section {
         overflow: hidden;
     }
     figure {
-        float: right;        
+        float: right;
         margin: $rem-4px 0 $rem-24px $rem-24px;
     }
     &:after {
@@ -396,44 +396,50 @@ section {
 ---------------------------------------------------------- */
 .sec-news {
     .sec-cmn__ttl {
-        margin-bottom: $rem-6px;
+        margin-bottom: 0;
     }
     .list-news {
-        display: flex;
-        flex-wrap: wrap;
         .list-news__date {
+            float: left;
             width: 80px;
-            font-size: 10px;
-            padding-top: 4px;
-            margin-bottom: 4px;
+            font-size: &rem-12px;
             line-height: 1.5;
-            border-bottom: 1px dotted #999;
-            &:last-of-type{
+            padding: $rem-6px 0 0 $rem-3px;
+            &:last-of-type {
                 border-bottom: none;
             }
         }
         .list-news__txt {
-            position: relative;
-            width: calc(100% - 80px);
+            padding: $rem-6px 0 $rem-6px $rem-89px;
             line-height: 1.5;
             border-bottom: 1px dotted #999;
-            font-size: $rem-12px;
-            padding-bottom: 6px;
-            margin-bottom: 4px;
-            padding: 0px 0 6px 8px;
-            &:last-child{
+            
+            &:last-child {
                 border-bottom: none;
             }
             a {
                 display: block;
+                position: relative;
+                line-height: 1.5;
+                color: #666;
+                &:link {
+                    color: #666;
+                }
                 &:hover {
                     text-decoration: underline;
                 }
-            }
-            .ico-arrow {
-                position: absolute;
-                top: 5px;
-                left: 0;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: $rem-5px;
+                    left: calc(0.625rem * -1);
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 4px 0 4px 4px;
+                    border-color: transparent transparent transparent #999;
+                }
             }
         }
     }
@@ -573,7 +579,7 @@ section {
     width: 100%;
     background: $bg_c-black;
     color: $color-white;
-    padding: $rem-8px 0 $rem-55px;
+    padding: $rem-12px 0 $rem-55px;
     /* BTN TOP
 ---------------------------------------------------------- */
     .btn-top {
