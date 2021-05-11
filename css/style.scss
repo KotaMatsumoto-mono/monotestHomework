@@ -105,19 +105,19 @@ section {
             display: flex;
             flex-wrap: nowrap;
             justify-content: flex-end;
-            margin-bottom: 16px;
+            margin-bottom: 9px;
             .txt-size__label {
                 color: $color-black;
                 font-size: 10px;
                 margin-right: 8px;
-                padding-top: 2px;
+                line-height: 1.8;
             }
             .txt-size__btn {
                 background: rgb(109, 109, 109);
                 background: linear-gradient(180deg, rgba(109, 109, 109, 1) 53%, rgba(62, 62, 62, 1) 100%);
                 color: $color-white;
-                line-height: 1;
-                padding: 4px 5px;
+                line-height: 1.8;
+                padding: 0 5px;
                 font-size: 10px;
                 cursor: pointer;
             }
@@ -255,12 +255,12 @@ section {
         color: $color-main;
         background: $bg_c-white;
         a {
-            // くりっかぶるな要素にするためにブロック要素にする
+            // クリッカブルな要素にするためにブロック要素にする
             display: block;
             position: relative;
             color: $color-main;
-            padding: $rem-9px 0 $rem-9px $rem-18px;
-            padding-right: 5px;
+            padding: $rem-6px $rem-8px $rem-5px $rem-23px;
+            line-height: 1.5;
             &:link {
                 color: $color-main;
                 text-decoration: underline;
@@ -334,6 +334,7 @@ section {
     background: $bg_c-white;
     border-radius: 4px 4px 0 0;
     p {
+        line-height: 1.67;
         margin-bottom: $rem-20px;
         &:last-child {
             margin-bottom: $rem-20px;
@@ -448,10 +449,14 @@ section {
         flex-wrap: wrap;
         .list-news__date {
             width: 80px;
-            border-bottom: 1px dotted #999;
             font-size: 10px;
             padding-top: 4px;
             margin-bottom: 4px;
+            line-height: 1.5;
+            border-bottom: 1px dotted #999;
+            &:last-of-type{
+                border-bottom: none;
+            }
         }
         .list-news__txt {
             position: relative;
@@ -490,25 +495,28 @@ section {
 
 .sec-table {
     .sec-cmn__ttl {
+        margin-bottom: $rem-20px;
     }
     .table-cmn {
         background: #c8c19b;
         border-spacing: 1px;
         .table__ttl {
+            line-height: 1.5;
             font-weight: bold;
             width: 25%;
             text-align: left;
             border: 1px solid #fff;
             border-collapse: separate;
-            padding: $rem-4px;
-            vertical-align: middle;
+            padding: $rem-3px $rem-8px $rem-2px;
             background: #e4e1cf;
+            vertical-align: middle;
         }
         .table__desc {
             text-align: left;
-            padding: $rem-4px;
             background: #fff;
             line-height: 1.5;
+            vertical-align: middle;
+            padding: $rem-4px $rem-8px $rem-3px;
         }
     }
 }
@@ -586,16 +594,23 @@ section {
         .list-lnav {
             margin-bottom: $rem-20px;
             .aside__list--ttl {
+                border-bottom: 1px solid #d1d1d1;
+                img {
+                    width: 100%;
+                    vertical-align: top;
+                }
             }
             .aside__list--item {
                 background: white;
                 border-bottom: 1px solid #d1d1d1;
-                line-height: 1.3;
+                transition: all 0.4s;
                 a {
-                    padding: $rem-7px $rem-25px $rem-7px $rem-25px;
+                    padding: $rem-5px $rem-25px $rem-6px;
                     display: block;
                     position: relative;
                     color: $color-main;
+                    font-size: $rem-12px;
+                    line-height: 1.5;
                     &:link {
                         color: $color-main;
                         word-break: break-all;
