@@ -587,7 +587,6 @@ section {
         background-image: url(../images/btn_toTop.png);
         position: absolute;
         right: calc(50% - 450px);
-        top: -20px;
         top: -24px;
         &:hover {
             background-position: top;
@@ -602,14 +601,15 @@ section {
             justify-content: center;
             .list-footer-nav__item {
                 border-right: 1px solid #666;
-                padding: $rem-10px $rem-14px $rem-9px;
                 &:last-child {
                     border-right: none;
                 }
                 a {
+                    padding: $rem-5px $rem-16px $rem-5px;
                     font-size: $rem-12px;
                     color: $color-white;
                     display: block;
+                    line-height: 1.5;
                     &:link {
                         color: $color-white;
                     }
