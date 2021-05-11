@@ -143,7 +143,7 @@ section {
     }
     .header__nav {
         width: 100%;
-        margin-bottom: 24px;
+        margin-bottom: 18px;
         background-color: $bg_c-black;
         .list-gnav {
             width: 900px;
@@ -230,8 +230,7 @@ section {
     justify-content: space-between;
     flex-direction: row-reverse;
     width: 900px;
-    margin-bottom: $rem-28px;
-    margin: 0 auto;
+    margin: 0 auto $rem-28px;
     .main-content {
         width: calc((100% - 220px));
     }
@@ -272,7 +271,7 @@ section {
                 width: 0;
                 height: 0;
                 border-style: solid;
-                border-width: $rem-13px 0 $rem-13px $rem-13px;
+                border-width: $rem-15px 0 $rem-15px $rem-15px;
                 border-color: transparent transparent transparent $bg_c-white;
                 z-index: 1;
                 right: calc(0.8125rem * -1);
@@ -286,16 +285,12 @@ section {
                 width: 0;
                 height: 0;
                 border-style: solid;
-                border-width: $rem-13px 0 $rem-13px $rem-13px;
+                border-width: $rem-15px 0 $rem-15px $rem-15px;
                 border-color: transparent transparent transparent #e4e1cf;
                 right: calc(0.875rem * -1);
                 top: 50%;
                 transform: translateY(-50%);
             }
-            &:first-child {
-                a {
-                    padding-left: 12px;
-                }
             &:hover {
                 text-decoration: none;
             }
@@ -342,9 +337,9 @@ section {
     }
     .sec-cmn__ttl {
         font-size: $rem-12px;
-        margin-bottom: $rem-20px;
+        margin-bottom: $rem-16px;
         color: $color-white;
-        padding: $rem-8px;
+        padding: $rem-7px;
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,010100+7,141102+23,5b4e08+65,71610a+80,7d6b0b+92,7d6b0b+100 */
         background: #000000; /* Old browsers */
         background: -moz-linear-gradient(
@@ -390,9 +385,8 @@ section {
         overflow: hidden;
     }
     figure {
-        float: right;
-        margin-left: $rem-24px;
-        margin-bottom: $rem-24px;
+        float: right;        
+        margin: $rem-4px 0 $rem-24px $rem-24px;
     }
     &:after {
         content: "";
@@ -409,8 +403,7 @@ section {
     }
     figure {
         float: left;
-        margin-right: $rem-24px;
-        margin-bottom: 0.5rem;
+        margin: $rem-4px $rem-24px 0.5rem 0;
     }
 }
 
