@@ -609,6 +609,22 @@ section {
     background: $bg_c-black;
     color: $color-white;
     padding: $rem-8px 0 $rem-55px;
+    /* BTN TOP
+---------------------------------------------------------- */
+    .btn-top {
+        display: block;
+        width: 129px;
+        height: 30px;
+        background-position: bottom;
+        font-size: 0px;
+        background-image: url(../images/btn_toTop.png);
+        position: absolute;
+        right: calc(50% - 450px);
+        top: -20px;
+        &:hover {
+            background-position: top;
+        }
+    }
     .footer__nav {
         margin: 0 auto $rem-30px;
         .list-footer-nav {
