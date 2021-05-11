@@ -522,7 +522,6 @@ section {
         flex-wrap: wrap;
         justify-content: center;
         color: $color-main;
-        text-decoration: underline;
         li {
             border: 1px solid #999;
             margin-right: $rem-1px;
@@ -543,39 +542,6 @@ section {
                     text-decoration: none;
                 }
             }
-        }
-    }
-}
-
-/* BTN TOP
----------------------------------------------------------- */
-.btn-top {
-    display: block;
-    width: 8.125rem;
-    padding: $rem-8px 0;
-    text-align: center;
-    text-decoration: none;
-    background: #000;
-    margin-left: auto;
-    font-size: $rem-11px;
-    color: #fff;
-    border-radius: 4px 4px 0 0;
-    &:link {
-        color: #fff;
-    }
-    span {
-        position: relative;
-        padding-left: $rem-16px;
-        &::before {
-            position: absolute;
-            content: "";
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0 $rem-4px $rem-4px $rem-4px;
-            border-color: transparent transparent #e4e1cf transparent;
-            left: 0;
-            top: $rem-3px;
         }
     }
 }
@@ -634,6 +600,7 @@ section {
 /* FOOTER
 ---------------------------------------------------------- */
 .footer {
+    position: relative;
     width: 100%;
     background: $bg_c-black;
     color: $color-white;
