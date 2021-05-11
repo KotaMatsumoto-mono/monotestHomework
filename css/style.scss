@@ -401,19 +401,14 @@ section {
     .list-news {
         .list-news__date {
             float: left;
-            width: 80px;
-            font-size: &rem-12px;
+            font-size: $rem-12px;
             line-height: 1.5;
             padding: $rem-6px 0 0 $rem-3px;
-            &:last-of-type {
-                border-bottom: none;
-            }
         }
         .list-news__txt {
             padding: $rem-6px 0 $rem-6px $rem-89px;
             line-height: 1.5;
             border-bottom: 1px dotted #999;
-            
             &:last-child {
                 border-bottom: none;
             }
@@ -422,6 +417,7 @@ section {
                 position: relative;
                 line-height: 1.5;
                 color: #666;
+                font-size: $rem-12px;
                 &:link {
                     color: #666;
                 }
@@ -432,12 +428,12 @@ section {
                     content: "";
                     position: absolute;
                     top: $rem-5px;
-                    left: calc(0.625rem * -1);
+                    left: -0.625rem;
                     display: inline-block;
                     width: 0;
                     height: 0;
                     border-style: solid;
-                    border-width: 4px 0 4px 4px;
+                    // border-width: $rem-4px 0 $rem-4px $rem-4px;
                     border-color: transparent transparent transparent #999;
                 }
             }

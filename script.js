@@ -22,7 +22,7 @@
     $(function () {
         // 小ボタンクリック
         $('#btn_s').click(function () {
-            $("html").css('font-size', '12px');
+            $("html").css('font-size', '14px');
         });
         // 中ボタンクリック
         $('#btn_m').click(function () {
@@ -30,7 +30,7 @@
         });
         // 大ボタンクリック
         $('#btn_l').click(function () {
-            $("html").css('font-size', '20px');
+            $("html").css('font-size', '18px');
         });
     });
 }
