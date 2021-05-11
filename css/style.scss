@@ -545,6 +545,14 @@ section {
                         left: $rem-10px;
                     }
                 }
+                &.is-current {
+                    background: #e4e1cf;
+                    a {
+                        &::before {
+                            border-left: 4px solid #fff;
+                        }
+                    }
+                }
                 &:hover {
                     background: #e4e1cf;
                     a {
