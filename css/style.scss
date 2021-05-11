@@ -155,48 +155,48 @@ section {
                 &.is-current {
                 }
                 &:nth-child(1) {
-                    background-position: 845px bottom;
+                    background-position: 845px center;
                     &:hover {
-                        background-position: 845px center;
+                        background-position: 845px top;
                     }
                     &.is-current {
-                        background-position: 845px top;
+                        background-position: 845px bottom;
                     }
                 }
                 &:nth-child(2) {
-                    background-position: 696px bottom;
+                    background-position: 696px center;
                     &:hover {
-                        background-position: 696px center;
+                        background-position: 696px top;
                     }
                     &.is-current {
-                        background-position: 696px top;
+                        background-position: 696px bottom;
                     }
                 }
                 &:nth-child(3) {
-                    background-position: 546px bottom;
+                    background-position: 546px center;
                     &:hover {
-                        background-position: 546px center;
+                        background-position: 546px top;
                     }
                     &.is-current {
-                        background-position: 546px top;
+                        background-position: 546px bottom;
                     }
                 }
                 &:nth-child(4) {
-                    background-position: 398px bottom;
+                    background-position: 398px center;
                     &:hover {
-                        background-position: 398px center;
+                        background-position: 398px top;
                     }
                     &.is-current {
-                        background-position: 398px top;
+                        background-position: 398px bottom;
                     }
                 }
                 &:nth-child(5) {
-                    background-position: 249px bottom;
+                    background-position: 249px center;
                     &:hover {
-                        background-position: 249px center;
+                        background-position: 249px top;
                     }
                     &.is-current {
-                        background-position: 249px top;
+                        background-position: 249px bottom;
                     }
                 }
             }

@@ -174,63 +174,63 @@ section {
 }
 
 .header .header__nav .list-gnav .list-gnav__item:nth-child(1) {
-  background-position: 845px bottom;
-}
-
-.header .header__nav .list-gnav .list-gnav__item:nth-child(1):hover {
   background-position: 845px center;
 }
 
-.header .header__nav .list-gnav .list-gnav__item:nth-child(1).is-current {
+.header .header__nav .list-gnav .list-gnav__item:nth-child(1):hover {
   background-position: 845px top;
 }
 
-.header .header__nav .list-gnav .list-gnav__item:nth-child(2) {
-  background-position: 696px bottom;
+.header .header__nav .list-gnav .list-gnav__item:nth-child(1).is-current {
+  background-position: 845px bottom;
 }
 
-.header .header__nav .list-gnav .list-gnav__item:nth-child(2):hover {
+.header .header__nav .list-gnav .list-gnav__item:nth-child(2) {
   background-position: 696px center;
 }
 
-.header .header__nav .list-gnav .list-gnav__item:nth-child(2).is-current {
+.header .header__nav .list-gnav .list-gnav__item:nth-child(2):hover {
   background-position: 696px top;
 }
 
-.header .header__nav .list-gnav .list-gnav__item:nth-child(3) {
-  background-position: 546px bottom;
+.header .header__nav .list-gnav .list-gnav__item:nth-child(2).is-current {
+  background-position: 696px bottom;
 }
 
-.header .header__nav .list-gnav .list-gnav__item:nth-child(3):hover {
+.header .header__nav .list-gnav .list-gnav__item:nth-child(3) {
   background-position: 546px center;
 }
 
-.header .header__nav .list-gnav .list-gnav__item:nth-child(3).is-current {
+.header .header__nav .list-gnav .list-gnav__item:nth-child(3):hover {
   background-position: 546px top;
 }
 
-.header .header__nav .list-gnav .list-gnav__item:nth-child(4) {
-  background-position: 398px bottom;
+.header .header__nav .list-gnav .list-gnav__item:nth-child(3).is-current {
+  background-position: 546px bottom;
 }
 
-.header .header__nav .list-gnav .list-gnav__item:nth-child(4):hover {
+.header .header__nav .list-gnav .list-gnav__item:nth-child(4) {
   background-position: 398px center;
 }
 
-.header .header__nav .list-gnav .list-gnav__item:nth-child(4).is-current {
+.header .header__nav .list-gnav .list-gnav__item:nth-child(4):hover {
   background-position: 398px top;
 }
 
-.header .header__nav .list-gnav .list-gnav__item:nth-child(5) {
-  background-position: 249px bottom;
+.header .header__nav .list-gnav .list-gnav__item:nth-child(4).is-current {
+  background-position: 398px bottom;
 }
 
-.header .header__nav .list-gnav .list-gnav__item:nth-child(5):hover {
+.header .header__nav .list-gnav .list-gnav__item:nth-child(5) {
   background-position: 249px center;
 }
 
-.header .header__nav .list-gnav .list-gnav__item:nth-child(5).is-current {
+.header .header__nav .list-gnav .list-gnav__item:nth-child(5):hover {
   background-position: 249px top;
+}
+
+.header .header__nav .list-gnav .list-gnav__item:nth-child(5).is-current {
+  background-position: 249px bottom;
 }
 
 /* MV
