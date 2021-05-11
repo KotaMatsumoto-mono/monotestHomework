@@ -590,13 +590,15 @@ section {
             flex-wrap: wrap;
             justify-content: center;
             .list-footer-nav__item {
-                border-right: 1px solid $color-white;
-                padding: $rem-10px $rem-13px;
+                border-right: 1px solid #666;
+                padding: $rem-10px $rem-14px $rem-9px;
                 &:last-child {
                     border-right: none;
                 }
                 a {
+                    font-size: $rem-12px;
                     color: $color-white;
+                    display: block;
                     &:link {
                         color: $color-white;
                     }
